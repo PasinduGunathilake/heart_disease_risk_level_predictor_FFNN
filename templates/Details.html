@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDRLP System</title>
+    <link rel="icon" type="image/png" href="/static/source/icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <form action="http://127.0.0.1:5000/getresult" method="post">
+        <div class="container">
+            <div class="header">
+                <h1>Cardio Risk Level Prediction System</h1>
+                <div class="image-container">
+                    <img src="/static/source/heart.jpeg" alt="Heart Health Illustration" class="illustration">
+                </div>
+            </div>
+
+            <div class="personal">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender_text" required>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                </select>
+
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+
+                <label for="tc">Total Cholesterol Level (mg/dL):</label>
+                <input type="text" id="tc" name="tc" required>
+
+                <label for="hdl">High-Density Lipoprotein (mg/dL):</label>
+                <input type="text" id="hdl" name="hdl" required>
+
+                <label for="smoke">Smoking:</label>
+                <select id="smoke" name="smoke_text" required>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+
+                <label for="bpm">Get Medications for Blood Pressure:</label>
+                <select id="bpm" name="bpm_text" required>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+                
+
+                <label for="diab">Have Diabetes:</label>
+                <select id="diab" name="diab_text" required>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+                
+
+                <input type="submit" value="Predict" id="submit-button">
+
+                <label for="result">Prediction Result (range 0-100) :</label>
+                <input type="text" id="result" name="result" value="{{ result if result is defined else '' }}" readonly>
+
+                <p id="note">Note: This prototype model is for educational purposes only and should not be considered medical advice.</p>
+            </div>
+        </form>
+
+        <div class="footer">
+            <p id="developer"> Developed by : Pasindu Gunathilake</p>
+            <a href="https://linkedin.com/in/pasindu-gunathilake-aab259260" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="pasindu-gunathilake-aab259260" height="30" width="40" /></a>
+            <a href="https://github.com/PasinduGunathilake" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="yourusername" height="30" width="40" /></a>
+        </div>
+
+</body>
+</html>
