@@ -1,5 +1,9 @@
 numpy
 pandas
-scikit-learn
 tensorflow
-matplotlib
+matplotlibflask
+numpy
+scikit-learn
+keras
+joblib
+jupyter
