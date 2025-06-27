@@ -53,11 +53,6 @@ The heart_disease_risk_level_predictor_FFNN_webapplication is designed to help u
 - Follow the steps to preprocess data, train the model, and use the predictor.
 - Enter patient data in the provided interface to get a risk prediction.
 
-## Example
-
-![Sample Prediction Demo](demo_screenshot.png)
-*(Replace with your own screenshot if available)*
-
 ## Authors
 
 - [Pasindu Gunathilake](https://github.com/PasinduGunathilake)
